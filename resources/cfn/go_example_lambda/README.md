@@ -3,16 +3,16 @@
 The AWS CloudFormation template **GoCdkStack.template.json** 
 contains definitions that you can use to create the following resources:
 
-- An Amazon S3 bucket
-- An Amazon DynamoDB table
-- An Amazon SNS topic
-- An Amazon SQS queue
+- An Amazon Simple Storage Service (Amazon S3) bucket
+- An Amazon DynamoDB (DynamoDB) table
+- An Amazon Simple Notification Service (Amazon SNS) topic
+- An Amazon Simple Queue Service (Amazon SQS) queue
 
 In addition, the template creates AWS Lambda functions,
 in Go, to detect the following events:
 
 - An object uploaded to the Amazon S3 bucket
-- An item added to the Amazon DynamoDB table
+- An item added to the DynamoDB table
 - A message sent to the Amazon SNS topic
 - A message sent to the Amazon SQS queue
 

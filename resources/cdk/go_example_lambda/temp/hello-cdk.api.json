@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.13.1",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "hello-cdk!",
+  "docComment": "",
+  "name": "hello-cdk",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "hello-cdk!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "hello-cdk!GoCdkStack:class",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class GoCdkStack extends "
+            },
+            {
+              "kind": "Content",
+              "text": "cdk."
+            },
+            {
+              "kind": "Reference",
+              "text": "Stack",
+              "canonicalReference": "@aws-cdk/core!Stack:class"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GoCdkStack",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "hello-cdk!GoCdkStack:constructor(1)",
+              "docComment": "/**\n * This code example uses the [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/latest/guide/home.html) to create the following resources:\n *\n * - An Amazon S3 bucket - An Amazon DynamoDB table - An Amazon SNS topic - An Amazon SQS queue\n *\n * In addition, this project creates AWS Lambda functions, in Go, to detect the following events:\n *\n * - An object uploaded to the Amazon S3 bucket - An item added to the Amazon DynamoDB table - A message sent to the Amazon SNS topic - A message sent to the Amazon SQS queue\n *\n * The go functions are in their respective sub-folders in **src**.\n *\n * @remarks\n *\n * Copy the contents of this directory to your computer. If you want to change CloudFormation stack name from the current value **GoLambdaCdkStack**, change that value in **cdk.json**, **bin/go-lambda-cdk.ts** and **lib/go-lambda-cdk-stack.ts** to the value you prefer.\n *\n * You must run the following command to get the packages that this CDK app requires:\n *\n * `npm install`\n *\n * You'll know you have all of the packages you need if you can successfully execute the following command to create a CloudFormation stack from this CDK app:\n *\n * `cdk synth`\n *\n * This creates the template **GoLambdaCdkStack.template.json** (unless you've changed the stack name) in **cdk.out**.\n *\n * If you encounter any errors running CDK commands, see the [Troubleshooting common AWS CDK issues](https://docs.aws.amazon.com/cdk/latest/guide/troubleshooting.html#troubleshooting_toolkit) topic in the CDK developer guide.\n *\n * ## Working with the CDK app\n *\n * If you aren't familiar with the CDK, here are some common commands:\n *\n * - `cdk deploy` deploy this stack to your default AWS account/region - `cdk diff` compare deployed stack with current state - `cdk ls` lists your CloudFormation stacks - `cdk synth` create a CloudFormation template in\n *\n * See [CDK command](https://docs.aws.amazon.com/cdk/latest/guide/cli.html) topic in the CDK developer guide for details.\n *\n * ## Getting information about the new resources\n *\n * Once you deploy the application, it display the following information that you can use to work with the created resources:\n *\n * - The name of the resource - The name of the Lambda function that handles the events from the resource - The name of the Amazon CloudWatch log group to which print statements from the AWS Lambda function are sent\n *\n * You can use the CLI to get information about the resources created by the resulting CloudFormation template by running the following command, where *STACK-NAME* is the name of your CloudFormation stack:\n *\n * `aws cloudformation describe-stacks --stack-name STACK-NAME --query Stacks[0].Outputs --output text`\n *\n * ## Testing the notifications\n *\n * This project contains the following Windows batch and Bash script files that you can use to test the AWS Lambda functions by sending a JSON payload to the function specified on the command line:\n *\n * - **DynamoDBRecord.bat**, **DynamoDBRecord.sh**: these scripts send the data in **dynamodb-payload.json**. - **S3Record.bat**, **S3Record.sh**: these scripts send the data in **s3-payload.json**. - **SNSRecord.bat**, **SNSRecord.sh**: these scripts send the data in **sns-payload.json**. - **SQSRecord.sh**, **SQSRecord.bat**: these scripts send the data in **sqs-payload.json**.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(scope: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "cdk."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Construct",
+                  "canonicalReference": "@aws-cdk/core!Construct:class"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", id: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", props?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "cdk."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "StackProps",
+                  "canonicalReference": "@aws-cdk/core!StackProps:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "scope",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 3
+                  }
+                },
+                {
+                  "parameterName": "id",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "props",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 6,
+                    "endIndex": 8
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          },
+          "implementsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

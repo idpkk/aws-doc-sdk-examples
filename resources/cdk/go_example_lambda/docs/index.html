@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>hello-cdk</title>
+	<meta name="description" content="Documentation for hello-cdk">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">hello-cdk</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>hello-cdk</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#amazon-lambda-function-code-examples-in-go" id="amazon-lambda-function-code-examples-in-go" style="color: inherit; text-decoration: none;">
+					<h1>Amazon Lambda function code examples in Go</h1>
+				</a>
+				<p>This code example uses the
+					<a href="https://docs.aws.amazon.com/cdk/latest/guide/home.html">AWS Cloud Development Kit (AWS CDK)</a>
+				to create the following resources:</p>
+				<ul>
+					<li>An Amazon S3 bucket</li>
+					<li>An Amazon DynamoDB table</li>
+					<li>An Amazon SNS topic</li>
+					<li>An Amazon SQS queue</li>
+				</ul>
+				<p>In addition, this project creates AWS Lambda functions,
+				in Go, to detect the following events:</p>
+				<ul>
+					<li>An object uploaded to the Amazon S3 bucket</li>
+					<li>An item added to the Amazon DynamoDB table</li>
+					<li>A message sent to the Amazon SNS topic</li>
+					<li>A message sent to the Amazon SQS queue</li>
+				</ul>
+				<p>The go functions are in their respective sub-folders in <strong>src</strong>.</p>
+				<a href="#using-this-code" id="using-this-code" style="color: inherit; text-decoration: none;">
+					<h2>Using this code</h2>
+				</a>
+				<p>Copy the contents of this directory to your computer.
+					If you want to change CloudFormation stack name from the
+					current value <strong>GoLambdaCdkStack</strong>,
+					change that value in <strong>cdk.json</strong>, <strong>bin/go-lambda-cdk.ts</strong> and <strong>lib/go-lambda-cdk-stack.ts</strong>
+				to the value you prefer.</p>
+				<p>You must run the following command to get the packages
+				that this CDK app requires:</p>
+				<p><code>npm install</code></p>
+				<p>You&#39;ll know you have all of the packages you need
+					if you can successfully execute the following command
+				to create a CloudFormation stack from this CDK app:</p>
+				<p><code>cdk synth</code></p>
+				<p>This creates the template <strong>GoLambdaCdkStack.template.json</strong>
+				(unless you&#39;ve changed the stack name) in <strong>cdk.out</strong>.</p>
+				<p>If you encounter any errors running CDK commands,
+					see the
+					<a href="https://docs.aws.amazon.com/cdk/latest/guide/troubleshooting.html#troubleshooting_toolkit">Troubleshooting common AWS CDK issues</a>
+				topic in the CDK developer guide.</p>
+				<a href="#working-with-the-cdk-app" id="working-with-the-cdk-app" style="color: inherit; text-decoration: none;">
+					<h2>Working with the CDK app</h2>
+				</a>
+				<p>If you aren&#39;t familiar with the CDK, here are some common commands:</p>
+				<ul>
+					<li><code>cdk deploy</code> deploy this stack to your default AWS account/region</li>
+					<li><code>cdk diff</code>   compare deployed stack with current state</li>
+					<li><code>cdk ls</code>     lists your CloudFormation stacks</li>
+					<li><code>cdk synth</code>  create a CloudFormation template in </li>
+				</ul>
+				<p>See <a href="https://docs.aws.amazon.com/cdk/latest/guide/cli.html">CDK command</a>
+				topic in the CDK developer guide for details.</p>
+				<a href="#getting-information-about-the-new-resources" id="getting-information-about-the-new-resources" style="color: inherit; text-decoration: none;">
+					<h2>Getting information about the new resources</h2>
+				</a>
+				<p>Once you deploy the application, it display the following information
+				that you can use to work with the created resources:</p>
+				<ul>
+					<li><p>The name of the resource</p>
+					</li>
+					<li><p>The name of the Lambda function that handles the events from the resource</p>
+					</li>
+					<li><p>The name of the Amazon CloudWatch log group to which
+						print statements from the AWS Lambda function are sent</p>
+						<p>You can use the CLI to get information about the resources created by
+							the resulting CloudFormation template by running the following command,
+						where <em>STACK-NAME</em> is the name of your CloudFormation stack:</p>
+					</li>
+				</ul>
+				<p><code>aws cloudformation describe-stacks --stack-name STACK-NAME --query Stacks[0].Outputs --output text</code></p>
+				<a href="#testing-the-notifications" id="testing-the-notifications" style="color: inherit; text-decoration: none;">
+					<h2>Testing the notifications</h2>
+				</a>
+				<p>This project contains the following Windows batch and Bash script files that you can use
+				to test the AWS Lambda functions by sending a JSON payload to the function specified on the command line:</p>
+				<ul>
+					<li><strong>DynamoDBRecord.bat</strong>, <strong>DynamoDBRecord.sh</strong>: these scripts send the data in <strong>dynamodb-payload.json</strong>.</li>
+					<li><strong>S3Record.bat</strong>, <strong>S3Record.sh</strong>: these scripts send the data in <strong>s3-payload.json</strong>.</li>
+					<li><strong>SNSRecord.bat</strong>, <strong>SNSRecord.sh</strong>: these scripts send the data in <strong>sns-payload.json</strong>.</li>
+					<li><strong>SQSRecord.sh</strong>, <strong>SQSRecord.bat</strong>: these scripts send the data in <strong>sqs-payload.json</strong>.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class">
+						<a href="classes/gocdkstack.html" class="tsd-kind-icon">Go<wbr>Cdk<wbr>Stack</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

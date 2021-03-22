@@ -1,13 +1,21 @@
 files:
-  - path: DescribeTable/DescribeTable.go
+  - path: DescribeTable/DescribeTablev2.go
     services:
-      - dynamodb
+      - service: dynamodb
+        actions:
+          - DescribeTable
   - path: DescribeTable/DescribeTable_test.go
     services:
-      - dynamodb
+      - service: dynamodb
+        actions:
+          - test
   - path: ScanItems/ScanItemsv2.go
     services:
-      - dynamodb
+      - service: dynamodb
+        actions:
+          - Scan
   - path: ScanItems/ScanItemsv2_test.go
     services:
-      - dynamodb
+      - service: dynamodb
+        actions:
+          - test

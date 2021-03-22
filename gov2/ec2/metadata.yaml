@@ -1,49 +1,83 @@
 files:
   - path: CreateImage/CreateImagev2.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - CreateImage
   - path: CreateImage/CreateImagev2_test.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - test
   - path: CreateInstance/CreateInstancev2.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - CreateTags
+          - RunInstances
   - path: CreateInstance/CreateInstancev2_test.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - test
   - path: DescribeInstances/DescribeInstancesv2.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - DescribeInstances
   - path: DescribeInstances/DescribeInstancesv2_test.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - test
   - path: DescribeVpcEndpoints/DescribeVpcEndpointsv2.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - DescribeVpcEndpointConnections
   - path: DescribeVpcEndpoints/DescribeVpcEndpointsv2_test.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - test
   - path: MonitorInstances/MonitorInstancesv2.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - MonitorInstances
+          - UnmonitorInstances
   - path: MonitorInstances/MonitorInstancesv2_test.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - test
   - path: RebootInstances/RebootInstancesv2.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - RebootInstances
   - path: RebootInstances/RebootInstancesv2_test.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - test
   - path: StartInstances/StartInstancesv2.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - StartInstances
   - path: StartInstances/StartInstancesv2_test.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - test
   - path: StopInstances/StopInstancesv2.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - StopInstances
   - path: StopInstances/StopInstancesv2_test.go
     services:
-      - ec2
+      - service: ec2
+        actions:
+          - test

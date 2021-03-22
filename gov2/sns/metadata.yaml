@@ -1,31 +1,51 @@
 files:
   - path: CreateTopic/CreateTopicv2.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - CreateTopic
   - path: CreateTopic/CreateTopicv2_test.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - test
   - path: ListSubscriptions/ListSubscriptionsv2.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - ListSubscriptions
   - path: ListSubscriptions/ListSubscriptionsv2_test.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - test
   - path: ListTopics/ListTopicsv2.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - ListTopics
   - path: ListTopics/ListTopicsv2_test.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - test
   - path: Publish/Publishv2.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - Publish
   - path: Publish/Publishv2_test.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - test
   - path: Subscribe/Subscribev2.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - Subscribe
   - path: Subscribe/Subscribev2_test.go
     services:
-      - sns
+      - service: sns
+        actions:
+          - test

@@ -1,25 +1,41 @@
 files:
   - path: CreateKey/CreateKeyv2.go
     services:
-      - kms
+      - service: kms
+        actions:
+          - CreateKey
   - path: CreateKey/CreateKeyv2_test.go
     services:
-      - kms
+      - service: kms
+        actions:
+          - test
   - path: DecryptData/DecryptDatav2.go
     services:
-      - kms
+      - service: kms
+        actions:
+          - Decrypt
   - path: DecryptData/DecryptDatav2_test.go
     services:
-      - kms
+      - service: kms
+        actions:
+          - test
   - path: EncryptData/EncryptDatav2.go
     services:
-      - kms
+      - service: kms
+        actions:
+          - Encrypt
   - path: EncryptData/EncryptDatav2_test.go
     services:
-      - kms
+      - service: kms
+        actions:
+          - test
   - path: ReEncryptData/ReEncryptDatav2.go
     services:
-      - kms
+      - service: kms
+        actions:
+          - ReEncrypt
   - path: ReEncryptData/ReEncryptDatav2_test.go
     services:
-      - kms
+      - service: kms
+        actions:
+          - test

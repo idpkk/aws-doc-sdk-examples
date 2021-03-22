@@ -1,19 +1,31 @@
 files:
   - path: DeleteParameter/DeleteParameterv2.go
     services:
-      - ssm
+      - service: ssm
+        actions:
+          - DeleteParameter
   - path: DeleteParameter/DeleteParameterv2_test.go
     services:
-      - ssm
+      - service: ssm
+        actions:
+          - test
   - path: GetParameter/GetParameterv2.go
     services:
-      - ssm
+      - service: ssm
+        actions:
+          - GetParameter
   - path: GetParameter/GetParameterv2_test.go
     services:
-      - ssm
+      - service: ssm
+        actions:
+          - test
   - path: PutParameter/PutParameterv2.go
     services:
-      - ssm
+      - service: ssm
+        actions:
+          - PutParameter
   - path: PutParameter/PutParameterv2_test.go
     services:
-      - ssm
+      - service: ssm
+        actions:
+          - test

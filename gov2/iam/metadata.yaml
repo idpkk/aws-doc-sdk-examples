@@ -1,127 +1,214 @@
 files:
   - path: AccessKeyLastUsed/AccessKeyLastUsedv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - GetAccessKeyLastUsed
   - path: AccessKeyLastUsed/AccessKeyLastUsedv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: AttachUserPolicy/AttachUserPolicyv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - AttachRolePolicy
   - path: AttachUserPolicy/AttachUserPolicyv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: CreateAccessKey/CreateAccessKeyv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - CreateAccessKey
   - path: CreateAccessKey/CreateAccessKeyv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: CreateAccountAlias/CreateAccountAliasv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - CreateAccountAlias
   - path: CreateAccountAlias/CreateAccountAliasv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: CreatePolicy/CreatePolicyv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - CreatePolicy
   - path: CreatePolicy/CreatePolicyv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: CreateUser/CreateUserv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - CreateUser
   - path: CreateUser/CreateUserv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: DeleteAccountAlias/DeleteAccountAliasv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - DeleteAccountAlias
   - path: DeleteAccountAlias/DeleteAccountAliasv2_test.go
     services:
-      - iam      
+      - service: iam
+        actions:
+          - test
   - path: DeleteAccessKey/DeleteAccessKeyv2.go
     services:
-      - iam      
+      - service: iam
+        actions:
+          - DeleteAccessKey
   - path: DeleteAccessKey/DeleteAccessKeyv2_test.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - test
   - path: DeleteServerCert/DeleteServerCertv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - DeleteServerCertificate
   - path: DeleteServerCert/DeleteServerCertv2_test.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - test
   - path: DeleteUser/DeleteUserv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - DeleteUser
   - path: DeleteUser/DeleteUserv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: DetachUserPolicy/DetachUserPolicyv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - DetachRolePolicy
   - path: DetachUserPolicy/DetachUserPolicyv2_test.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - test
   - path: GetServerCert/GetServerCertv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - GetServerCertificate
   - path: GetServerCert/GetServerCertv2_test.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - test
   - path: GetPolicy/GetPolicyv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - GetPolicy
   - path: GetPolicy/GetPolicyv2_test.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - test
   - path: ListAdmins/ListAdminsv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - GetAccountAuthorizationDetails
+          - ListAttachedGroupPolicies
+          - ListGroupPolicies
+          - ListGroupsForUser
   - path: ListAdmins/ListAdminsv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: ListAccessKeys/ListAccessKeysv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - ListAccessKeys
   - path: ListAccessKeys/ListAccessKeysv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: ListAccountAliases/ListAccountAliasesv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - ListAccountAliases
   - path: ListAccountAliases/ListAccountAliasesv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: ListServerCerts/ListServerCertsv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - ListServerCertificates
   - path: ListServerCerts/ListServerCertsv2_test.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - test
   - path: ListUsers/ListUsersv2.go
     services:
-      - iam      
+      - service: iam      
+        actions:
+          - ListUsers
   - path: ListUsers/ListUsersv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: UpdateAccessKey/UpdateAccessKeyv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - UpdateAccessKey
   - path: UpdateAccessKey/UpdateAccessKeyv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: UpdateServerCert/UpdateServerCertv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - UpdateServerCertificate
   - path: UpdateServerCert/UpdateServerCertv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test
   - path: UpdateUser/UpdateUserv2.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - UpdateUser
   - path: UpdateUser/UpdateUserv2_test.go
     services:
-      - iam
+      - service: iam
+        actions:
+          - test

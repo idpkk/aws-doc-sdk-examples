@@ -1,73 +1,129 @@
 files:
   - path: ChangeMsgVisibility/ChangeMsgVisibilityv2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - ChangeMessageVisibility
+          - GetQueueUrl
   - path: ChangeMsgVisibility/ChangeMsgVisibilityv2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: ConfigureLPQueue/ConfigureLPQueuev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - GetQueueUrl
+          - SetQueueAttributes
   - path: ConfigureLPQueue/ConfigureLPQueuev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: CreateQueue/CreateQueuev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - CreateQueue
   - path: CreateQueue/CreateQueuev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: CreateLPQueue/CreateLPQueuev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - CreateQueue
   - path: CreateLPQueue/CreateLPQueuev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: DeadLetterQueue/DeadLetterQueuev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - GetQueueUrl
+          - SetQueueAttributes
   - path: DeadLetterQueue/DeadLetterQueuev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: DeleteMessage/DeleteMessagev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - DeleteMessage
+          - GetQueueUrl
   - path: DeleteMessage/DeleteMessagev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: DeleteQueue/DeleteQueuev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - DeleteQueue
+          - GetQueueUrl
   - path: DeleteQueue/DeleteQueuev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: GetQueueURL/GetQueueURLv2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - GetQueueUrl
   - path: GetQueueURL/GetQueueURLv2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: ListQueues/ListQueuesv2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - ListQueues
   - path: ListQueues/ListQueuesv2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: ReceiveLPMessage/ReceiveLPMessagev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - GetQueueUrl
+          - ReceiveMessage
   - path: ReceiveLPMessage/ReceiveLPMessagev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: ReceiveMessage/ReceiveMessagev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - GetQueueUrl
+          - ReceiveMessage
   - path: ReceiveMessage/ReceiveMessagev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test
   - path: SendMessage/SendMessagev2.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - GetQueueUrl
+          - SendMessage
   - path: SendMessage/SendMessagev2_test.go
     services:
-      - sqs
+      - service: sqs
+        actions:
+          - test

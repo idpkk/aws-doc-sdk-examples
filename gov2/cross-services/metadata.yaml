@@ -1,0 +1,18 @@
+files:
+  - path: ProcessImage/ProcessImage.go
+    services:
+      - service: dynamodb
+        actions:
+	  - PutItem
+	  - UpdateItem
+      - service: rekognition
+        actions:
+          - DetectLabels
+      - service: s3
+        actions:
+	  - PutObject
+  - path: ProcessImage/ProcessImage_test.go
+    services:
+      - service: rekognition
+        actions:
+          - test

@@ -1,50 +1,60 @@
 files:
-  - path: CreateTopic/CreateTopicv2.go
+  - description: This example creates an Amazon SNS topic.
+    path: CreateTopic/CreateTopicv2.go
     services:
       - service: sns
         actions:
           - CreateTopic
-  - path: CreateTopic/CreateTopicv2_test.go
+  - description: test
+    path: CreateTopic/CreateTopicv2_test.go
     services:
       - service: sns
         actions:
           - test
-  - path: ListSubscriptions/ListSubscriptionsv2.go
+  - description: This example lists the topic and subscription Amazon Resource Names (ARNs) for your Amazon SNS subscriptions.
+    path: ListSubscriptions/ListSubscriptionsv2.go
     services:
       - service: sns
         actions:
           - ListSubscriptions
-  - path: ListSubscriptions/ListSubscriptionsv2_test.go
+  - description: test
+    path: ListSubscriptions/ListSubscriptionsv2_test.go
     services:
       - service: sns
         actions:
           - test
-  - path: ListTopics/ListTopicsv2.go
+  - description: This example lists the ARNs for your Amazon SNS topics.
+    path: ListTopics/ListTopicsv2.go
     services:
       - service: sns
         actions:
           - ListTopics
-  - path: ListTopics/ListTopicsv2_test.go
+  - description: test
+    path: ListTopics/ListTopicsv2_test.go
     services:
       - service: sns
         actions:
           - test
-  - path: Publish/Publishv2.go
+  - description: This example publishes a message to an Amazon SNS topic.
+    path: Publish/Publishv2.go
     services:
       - service: sns
         actions:
           - Publish
-  - path: Publish/Publishv2_test.go
+  - description: test
+    path: Publish/Publishv2_test.go
     services:
       - service: sns
         actions:
           - test
-  - path: Subscribe/Subscribev2.go
+  - description: This example subscribes a user, by email address, to an Amazon SNS topic.
+    path: Subscribe/Subscribev2.go
     services:
       - service: sns
         actions:
           - Subscribe
-  - path: Subscribe/Subscribev2_test.go
+  - description: test
+    path: Subscribe/Subscribev2_test.go
     services:
       - service: sns
         actions:

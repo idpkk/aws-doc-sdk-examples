@@ -1,10 +1,12 @@
 files:
-  - path: AssumeRole/AssumeRolev2.go
+  - description: This example gets temporary security credentials to access resources.
+    path: AssumeRole/AssumeRolev2.go
     services:
       - service: sts
         actions:
           - AssumeRole
-  - path: AssumeRole/AssumeRolev2_test.go
+  - description: test
+    path: AssumeRole/AssumeRolev2_test.go
     services:
       - service: sts
         actions:

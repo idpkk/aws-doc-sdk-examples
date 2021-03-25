@@ -1,128 +1,152 @@
 files:
-  - path: ChangeMsgVisibility/ChangeMsgVisibilityv2.go
+  - description: This example sets the visibility timeout for a message in an Amazon SQS queue.
+    path: ChangeMsgVisibility/ChangeMsgVisibilityv2.go
     services:
       - service: sqs
         actions:
           - ChangeMessageVisibility
           - GetQueueUrl
-  - path: ChangeMsgVisibility/ChangeMsgVisibilityv2_test.go
+  - description: test
+    path: ChangeMsgVisibility/ChangeMsgVisibilityv2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: ConfigureLPQueue/ConfigureLPQueuev2.go
+  - description: This example configures an Amazon SQS queue to use long polling.
+    path: ConfigureLPQueue/ConfigureLPQueuev2.go
     services:
       - service: sqs
         actions:
           - GetQueueUrl
           - SetQueueAttributes
-  - path: ConfigureLPQueue/ConfigureLPQueuev2_test.go
+  - description: test
+    path: ConfigureLPQueue/ConfigureLPQueuev2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: CreateQueue/CreateQueuev2.go
+  - description: This example creates an Amazon SQS queue.
+    path: CreateQueue/CreateQueuev2.go
     services:
       - service: sqs
         actions:
           - CreateQueue
-  - path: CreateQueue/CreateQueuev2_test.go
+  - description: test
+    path: CreateQueue/CreateQueuev2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: CreateLPQueue/CreateLPQueuev2.go
+  - description: This example creates a long-polling Amazon SQS queue.
+    path: CreateLPQueue/CreateLPQueuev2.go
     services:
       - service: sqs
         actions:
           - CreateQueue
-  - path: CreateLPQueue/CreateLPQueuev2_test.go
+  - description: test
+    path: CreateLPQueue/CreateLPQueuev2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: DeadLetterQueue/DeadLetterQueuev2.go
+  - description: This example configures an Amazon SQS queue for messages that could not be delivered to another queue.
+    path: DeadLetterQueue/DeadLetterQueuev2.go
     services:
       - service: sqs
         actions:
           - GetQueueUrl
           - SetQueueAttributes
-  - path: DeadLetterQueue/DeadLetterQueuev2_test.go
+  - description: test
+    path: DeadLetterQueue/DeadLetterQueuev2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: DeleteMessage/DeleteMessagev2.go
+  - description: This example deletes a message from an Amazon SQS queue.
+    path: DeleteMessage/DeleteMessagev2.go
     services:
       - service: sqs
         actions:
           - DeleteMessage
           - GetQueueUrl
-  - path: DeleteMessage/DeleteMessagev2_test.go
+  - description: test
+    path: DeleteMessage/DeleteMessagev2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: DeleteQueue/DeleteQueuev2.go
+  - description: This example deletes an Amazon SQS queue.
+    path: DeleteQueue/DeleteQueuev2.go
     services:
       - service: sqs
         actions:
           - DeleteQueue
           - GetQueueUrl
-  - path: DeleteQueue/DeleteQueuev2_test.go
+  - description: test
+    path: DeleteQueue/DeleteQueuev2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: GetQueueURL/GetQueueURLv2.go
+  - description: This example gets the URL of an Amazon SQS queue.
+    path: GetQueueURL/GetQueueURLv2.go
     services:
       - service: sqs
         actions:
           - GetQueueUrl
-  - path: GetQueueURL/GetQueueURLv2_test.go
+  - description: test
+    path: GetQueueURL/GetQueueURLv2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: ListQueues/ListQueuesv2.go
+  - description: This example retrieves a list of your Amazon SQS queues.
+    path: ListQueues/ListQueuesv2.go
     services:
       - service: sqs
         actions:
           - ListQueues
-  - path: ListQueues/ListQueuesv2_test.go
+  - description: test
+    path: ListQueues/ListQueuesv2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: ReceiveLPMessage/ReceiveLPMessagev2.go
+  - description: This example gets the most recent message from a long-polling Amazon SQS queue.
+    path: ReceiveLPMessage/ReceiveLPMessagev2.go
     services:
       - service: sqs
         actions:
           - GetQueueUrl
           - ReceiveMessage
-  - path: ReceiveLPMessage/ReceiveLPMessagev2_test.go
+  - description: test
+    path: ReceiveLPMessage/ReceiveLPMessagev2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: ReceiveMessage/ReceiveMessagev2.go
+  - description: This example gets the most recent message from an Amazon SQS queue.
+    path: ReceiveMessage/ReceiveMessagev2.go
     services:
       - service: sqs
         actions:
           - GetQueueUrl
           - ReceiveMessage
-  - path: ReceiveMessage/ReceiveMessagev2_test.go
+  - description: test
+    path: ReceiveMessage/ReceiveMessagev2_test.go
     services:
       - service: sqs
         actions:
           - test
-  - path: SendMessage/SendMessagev2.go
+  - description: This example sends a message to an Amazon SQS queue.
+    path: SendMessage/SendMessagev2.go
     services:
       - service: sqs
         actions:
           - GetQueueUrl
           - SendMessage
-  - path: SendMessage/SendMessagev2_test.go
+  - description: test
+    path: SendMessage/SendMessagev2_test.go
     services:
       - service: sqs
         actions:

@@ -66,7 +66,7 @@ The unit test accepts a similar value in _config.json_.
 
 ### CreateUser/CreateUserv2.go
 
-This example creates an IAM user. 
+This example creates an IAM user.
 
 `go run CreateUserv2.go -u USER-NAME`
 

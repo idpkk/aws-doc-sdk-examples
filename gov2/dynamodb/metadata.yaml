@@ -1,20 +1,24 @@
 files:
-  - path: DescribeTable/DescribeTablev2.go
+  - description: This example lists the following properties of a DynamoDB table.
+    path: DescribeTable/DescribeTablev2.go
     services:
       - service: dynamodb
         actions:
           - DescribeTable
-  - path: DescribeTable/DescribeTable_test.go
+  - description: test
+    path: DescribeTable/DescribeTable_test.go
     services:
       - service: dynamodb
         actions:
           - test
-  - path: ScanItems/ScanItemsv2.go
+  - description: This example retrieves the Amazon DynamoDB items with a rating above a specified value in a specified year.
+    path: ScanItems/ScanItemsv2.go
     services:
       - service: dynamodb
         actions:
           - Scan
-  - path: ScanItems/ScanItemsv2_test.go
+  - description: test
+    path: ScanItems/ScanItemsv2_test.go
     services:
       - service: dynamodb
         actions:

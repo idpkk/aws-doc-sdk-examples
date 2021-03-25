@@ -37,6 +37,12 @@ This example creates a T2-Micro instance from the Amazon EC2 image ami-e7527ed7 
 
 The unit test accepts similar values in _config.json_.
 
+### DescribeInstances/DescribeInstancesv2.go
+
+This example retrieves information about your Amazon EC2 instances.
+
+`go run DescribeInstancesv2.go`
+
 ### DescribeVpcEndpoints/DescribeVpcEndpointsv2.go
 
 This example retrieves information about your VPC endpoint connections.
@@ -45,12 +51,6 @@ This example retrieves information about your VPC endpoint connections.
 
 - _REGION_ is the region to get the endpoints from.
   This value is **us-west-2** by default.
-
-### DescribeInstances/DescribeInstancesv2.go
-
-This example retrieves information about your Amazon EC2 instances.
-
-`go run DescribeInstancesv2.go`
 
 ### MonitorInstances/MonitorInstancesv2.go
 

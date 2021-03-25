@@ -1,10 +1,12 @@
 files:
-  - path: PutRecord/PutRecordv2.go
+  - description: This example produces a new data record in the stream.
+    path: PutRecord/PutRecordv2.go
     services:
       - service: kinesis
         actions:
           - PutRecord
-  - path: PutRecord/PutRecordv2_test.go
+  - description: test
+    path: PutRecord/PutRecordv2_test.go
     services:
       - service: kinesis
         actions:

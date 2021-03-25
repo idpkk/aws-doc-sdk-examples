@@ -1,100 +1,120 @@
 files:
-  - path: CopyObject/CopyObjectv2.go
+  - description: This example copies an Amazon S3 object from one bucket to another.
+    path: CopyObject/CopyObjectv2.go
     services:
       - service: s3
         actions:
           - CopyObject
-  - path: CopyObject/CopyObjectv2_test.go
+  - description: test
+    path: CopyObject/CopyObjectv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: CreateBucket/CreateBucketv2.go
+  - description: This example creates an Amazon S3 bucket.
+    path: CreateBucket/CreateBucketv2.go
     services:
       - service: s3
         actions:
           - CreateBucket
-  - path: CreateBucket/CreateBucketv2_test.go
+  - description: test
+    path: CreateBucket/CreateBucketv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: DeleteBucket/DeleteBucketv2.go
+  - description: This example deletes an Amazon S3 bucket.
+    path: DeleteBucket/DeleteBucketv2.go
     services:
       - service: s3
         actions:
           - DeleteBucket
-  - path: DeleteBucket/DeleteBucketv2_test.go
+  - description: test
+    path: DeleteBucket/DeleteBucketv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: DeleteObject/DeleteObjectv2.go
+  - description: This example deletes an Amazon S3 bucket object.
+    path: DeleteObject/DeleteObjectv2.go
     services:
       - service: s3
         actions:
           - DeleteObject
-  - path: DeleteObject/DeleteObjectv2_test.go
+  - description: test
+    path: DeleteObject/DeleteObjectv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: GeneratePresignedURL/GeneratePresignedURLv2.go
+  - description: This example retrieves a presigned URL for an Amazon S3 bucket object.
+    path: GeneratePresignedURL/GeneratePresignedURLv2.go
     services:
       - service: s3
         actions:
           - PresignGetObject
-  - path: GeneratePresignedURL/GeneratePresignedURLv2_test.go
+  - description: test
+    path: GeneratePresignedURL/GeneratePresignedURLv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: GetBucketAcl/GetBucketAclv2.go
+  - description: This example retrieves the access control list (ACL) for an Amazon S3 bucket.
+    path: GetBucketAcl/GetBucketAclv2.go
     services:
       - service: s3
         actions:
           - GetBucketAcl
-  - path: GetBucketAcl/GetBucketAclv2_test.go
+  - description: test
+    path: GetBucketAcl/GetBucketAclv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: GetObjectAcl/GetObjectAclv2.go
+  - description: This example retrieves the access control list (ACL) for an Amazon S3 bucket object.
+    path: GetObjectAcl/GetObjectAclv2.go
     services:
       - service: s3
         actions:
           - GetObjectAcl
-  - path: GetObjectAcl/GetObjectAclv2_test.go
+  - description: test
+    path: GetObjectAcl/GetObjectAclv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: ListBuckets/ListBucketsv2.go
+  - description: This example lists your Amazon S3 buckets.
+    path: ListBuckets/ListBucketsv2.go
     services:
       - service: s3
         actions:
           - ListBuckets
-  - path: ListBuckets/ListBucketsv2_test.go
+  - description: test
+    path: ListBuckets/ListBucketsv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: ListObjects/ListObjectsv2.go
+  - description: This example lists the objects in an Amazon S3 bucket.
+    path: ListObjects/ListObjectsv2.go
     services:
       - service: s3
         actions:
           - ListObjectsV2
-  - path: ListObjects/ListObjectsv2_test.go
+  - description: test
+    path: ListObjects/ListObjectsv2_test.go
     services:
       - service: s3
         actions:
           - test
-  - path: PutObject/PutObjectv2.go
+  - description: This example creates an Amazon S3 bucket object from a local file.
+    path: PutObject/PutObjectv2.go
     services:
       - service: s3
         actions:
           - PutObject
-  - path: PutObject/PutObjectv2_test.go
+  - description: test
+    path: PutObject/PutObjectv2_test.go
     services:
       - service: s3
         actions:

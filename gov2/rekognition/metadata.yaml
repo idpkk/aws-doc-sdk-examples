@@ -1,10 +1,12 @@
 files:
-  - path: DetectLabels/DetectLabels.go
+  - description: This example detects instances of real-world entities, such as flowers, weddings, and nature.
+    path: DetectLabels/DetectLabels.go
     services:
       - service: rekognition
         actions:
           - DetectLabels
-  - path: DetectLabels/DetectLabels_test.go
+  - description: test
+    path: DetectLabels/DetectLabels_test.go
     services:
       - service: rekognition
         actions:

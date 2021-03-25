@@ -1,82 +1,98 @@
 files:
-  - path: CreateImage/CreateImagev2.go
+  - description: This example creates an Amazon EC2 image.
+    path: CreateImage/CreateImagev2.go
     services:
       - service: ec2
         actions:
           - CreateImage
-  - path: CreateImage/CreateImagev2_test.go
+  - description: test
+    path: CreateImage/CreateImagev2_test.go
     services:
       - service: ec2
         actions:
           - test
-  - path: CreateInstance/CreateInstancev2.go
+  - description: This example creates a T2-Micro instance from the Amazon EC2 image ami-e7527ed7 and attaches a tag to the instance.
+    path: CreateInstance/CreateInstancev2.go
     services:
       - service: ec2
         actions:
           - CreateTags
           - RunInstances
-  - path: CreateInstance/CreateInstancev2_test.go
+  - description: test
+    path: CreateInstance/CreateInstancev2_test.go
     services:
       - service: ec2
         actions:
           - test
-  - path: DescribeInstances/DescribeInstancesv2.go
+  - description: This example retrieves information about your Amazon EC2 instances.
+    path: DescribeInstances/DescribeInstancesv2.go
     services:
       - service: ec2
         actions:
           - DescribeInstances
-  - path: DescribeInstances/DescribeInstancesv2_test.go
+  - description: test
+    path: DescribeInstances/DescribeInstancesv2_test.go
     services:
       - service: ec2
         actions:
           - test
-  - path: DescribeVpcEndpoints/DescribeVpcEndpointsv2.go
+  - description: This example retrieves information about your VPC endpoint connections.
+    path: DescribeVpcEndpoints/DescribeVpcEndpointsv2.go
     services:
       - service: ec2
         actions:
           - DescribeVpcEndpointConnections
-  - path: DescribeVpcEndpoints/DescribeVpcEndpointsv2_test.go
+  - description: test
+    path: DescribeVpcEndpoints/DescribeVpcEndpointsv2_test.go
     services:
       - service: ec2
         actions:
           - test
-  - path: MonitorInstances/MonitorInstancesv2.go
+  - description: This example enables or disables monitoring for an Amazon EC2 instance.
+    path: MonitorInstances/MonitorInstancesv2.go
     services:
       - service: ec2
         actions:
           - MonitorInstances
           - UnmonitorInstances
-  - path: MonitorInstances/MonitorInstancesv2_test.go
+  - description: test
+    path: MonitorInstances/MonitorInstancesv2_test.go
     services:
       - service: ec2
         actions:
           - test
-  - path: RebootInstances/RebootInstancesv2.go
+  - description: This example reboots an Amazon EC2 instance.
+    path: RebootInstances/RebootInstancesv2.go
     services:
       - service: ec2
         actions:
           - RebootInstances
-  - path: RebootInstances/RebootInstancesv2_test.go
+  - description: test
+    path: RebootInstances/RebootInstancesv2_test.go
     services:
       - service: ec2
         actions:
           - test
-  - path: StartInstances/StartInstancesv2.go
+  - description: This example starts an Amazon EC2 instance.
+    path: StartInstances/StartInstancesv2.go
     services:
       - service: ec2
         actions:
           - StartInstances
-  - path: StartInstances/StartInstancesv2_test.go
+  - description: test
+    path: StartInstances/StartInstancesv2_test.go
     services:
       - service: ec2
         actions:
           - test
-  - path: StopInstances/StopInstancesv2.go
+  - description: This example stops an Amazon EC2 instance.
+    path: StopInstances/StopInstancesv2.go
     services:
       - service: ec2
         actions:
           - StopInstances
-  - path: StopInstances/StopInstancesv2_test.go
+  - description: test
+    path: StopInstances/StopInstancesv2_test.go
     services:
       - service: ec2
         actions:

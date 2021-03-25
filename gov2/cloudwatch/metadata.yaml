@@ -1,60 +1,72 @@
 files:
-  - path: CreateCustomMetric/CreateCustomMetricv2.go
+  - description: This example creates a new Amazon CloudWatch metric in a namespace.
+    path: CreateCustomMetric/CreateCustomMetricv2.go
     services:
       - service: cloudwatch
         actions:
           - PutMetricData
-  - path: CreateCustomMetric/CreateCustomMetricv2_test.go
+  - description: test
+    path: CreateCustomMetric/CreateCustomMetricv2_test.go
     services:
       - service: cloudwatch
         actions:
           - test
-  - path: CreateEnableMetricAlarm/CreateEnableMetricAlarmv2.go
+  - description: This example enables the specified Amazon CloudWatch alarm.
+    path: CreateEnableMetricAlarm/CreateEnableMetricAlarmv2.go
     services:
       - service: cloudwatch
         actions:
           - PutMetricAlarm
-  - path: CreateEnableMetricAlarm/CreateEnableMetricAlarmv2_test.go
+  - description: test
+    path: CreateEnableMetricAlarm/CreateEnableMetricAlarmv2_test.go
     services:
       - service: cloudwatch
         actions:
           - test
-  - path: DescribeAlarms/DescribeAlarmsv2.go
+  - description: This example displays a list of your Amazon CloudWatch alarms.
+    path: DescribeAlarms/DescribeAlarmsv2.go
     services:
       - service: cloudwatch
         actions:
           - DescribeAlarms
-  - path: DescribeAlarms/DescribeAlarmsv2_test.go
+  - description: test
+    path: DescribeAlarms/DescribeAlarmsv2_test.go
     services:
       - service: cloudwatch
         actions:
           - test
-  - path: DisableAlarm/DisableAlarmv2.go
+  - description: This example disables an Amazon CloudWatch alarm.
+    path: DisableAlarm/DisableAlarmv2.go
     services:
       - service: cloudwatch
         actions:
           - DisableAlarmActions
-  - path: DisableAlarm/DisableAlarmv2_test.go
+  - description: test
+    path: DisableAlarm/DisableAlarmv2_test.go
     services:
       - service: cloudwatch
         actions:
           - test
-  - path: ListMetrics/ListMetricsv2.go
+  - description: This example displays the name, namespace, and dimension name of your Amazon CloudWatch metrics.
+    path: ListMetrics/ListMetricsv2.go
     services:
       - service: cloudwatch
         actions:
           - ListMetrics
-  - path: ListMetrics/ListMetricsv2_test.go
+  - description: test
+    path: ListMetrics/ListMetricsv2_test.go
     services:
       - service: cloudwatch
         actions:
           - test
-  - path: PutEvent/PutEventv2.go
+  - description: This example sends an Amazon CloudWatch event to Amazon EventBridge.
+    path: PutEvent/PutEventv2.go
     services:
       - service: cloudwatch
         actions:
           - PutEvents
-  - path: PutEvent/PutEventv2_test.go
+  - description: test
+    path: PutEvent/PutEventv2_test.go
     services:
       - service: cloudwatch
         actions:

@@ -1,135 +1,186 @@
 files:
-  - path: AccessKeyLastUsed/AccessKeyLastUsedv2.go
+  - description: This example retrieves when an IAM access key was last used, including the AWS Region and with which service.
+    path: AccessKeyLastUsed/AccessKeyLastUsedv2.go
     services:
       - service: iam
         actions:
           - GetAccessKeyLastUsed
-  - path: AccessKeyLastUsed/AccessKeyLastUsedv2_test.go
+  - description: test
+    path: AccessKeyLastUsed/AccessKeyLastUsedv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: AttachUserPolicy/AttachUserPolicyv2.go
+  - description: This example attaches an Amazon DynamoDB full-access policy to an IAM role.
+    path: AttachUserPolicy/AttachUserPolicyv2.go
     services:
       - service: iam
         actions:
           - AttachRolePolicy
-  - path: AttachUserPolicy/AttachUserPolicyv2_test.go
+  - description: test
+    path: AttachUserPolicy/AttachUserPolicyv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: CreateAccessKey/CreateAccessKeyv2.go
+  - description: This example creates a new IAM access key for a user.
+    path: CreateAccessKey/CreateAccessKeyv2.go
     services:
       - service: iam
         actions:
           - CreateAccessKey
-  - path: CreateAccessKey/CreateAccessKeyv2_test.go
+  - description: test
+    path: CreateAccessKey/CreateAccessKeyv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: CreateAccountAlias/CreateAccountAliasv2.go
+  - description: This example creates an alias for your IAM account.
+    path: CreateAccountAlias/CreateAccountAliasv2.go
     services:
       - service: iam
         actions:
           - CreateAccountAlias
-  - path: CreateAccountAlias/CreateAccountAliasv2_test.go
+  - description: test
+    path: CreateAccountAlias/CreateAccountAliasv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: CreatePolicy/CreatePolicyv2.go
+  - description: This example creates an IAM policy.
+    path: CreatePolicy/CreatePolicyv2.go
     services:
       - service: iam
         actions:
           - CreatePolicy
-  - path: CreatePolicy/CreatePolicyv2_test.go
+  - description: test
+    path: CreatePolicy/CreatePolicyv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: CreateUser/CreateUserv2.go
+  - description: This example creates an IAM user.
+    path: CreateUser/CreateUserv2.go
     services:
       - service: iam
         actions:
           - CreateUser
-  - path: CreateUser/CreateUserv2_test.go
+  - description: test
+    path: CreateUser/CreateUserv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: DeleteAccountAlias/DeleteAccountAliasv2.go
-    services:
-      - service: iam      
-        actions:
-          - DeleteAccountAlias
-  - path: DeleteAccountAlias/DeleteAccountAliasv2_test.go
-    services:
-      - service: iam
-        actions:
-          - test
-  - path: DeleteAccessKey/DeleteAccessKeyv2.go
+  - description: This example deletes an IAM access key.
+    path: DeleteAccessKey/DeleteAccessKeyv2.go
     services:
       - service: iam
         actions:
           - DeleteAccessKey
-  - path: DeleteAccessKey/DeleteAccessKeyv2_test.go
+  - description: test
+    path: DeleteAccessKey/DeleteAccessKeyv2_test.go
     services:
       - service: iam      
         actions:
           - test
-  - path: DeleteServerCert/DeleteServerCertv2.go
+  - description: This example deletes an alias for your IAM account.
+    path: DeleteAccountAlias/DeleteAccountAliasv2.go
     services:
       - service: iam      
         actions:
-          - DeleteServerCertificate
-  - path: DeleteServerCert/DeleteServerCertv2_test.go
-    services:
-      - service: iam      
-        actions:
-          - test
-  - path: DeleteUser/DeleteUserv2.go
-    services:
-      - service: iam      
-        actions:
-          - DeleteUser
-  - path: DeleteUser/DeleteUserv2_test.go
+          - DeleteAccountAlias
+  - description: test
+    path: DeleteAccountAlias/DeleteAccountAliasv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: DetachUserPolicy/DetachUserPolicyv2.go
+  - description: This example deletes an IAM server certificate.
+    path: DeleteServerCert/DeleteServerCertv2.go
+    services:
+      - service: iam      
+        actions:
+          - DeleteServerCertificate
+  - description: test
+    path: DeleteServerCert/DeleteServerCertv2_test.go
+    services:
+      - service: iam      
+        actions:
+          - test
+  - description: This example deletes an IAM user.
+    path: DeleteUser/DeleteUserv2.go
+    services:
+      - service: iam      
+        actions:
+          - DeleteUser
+  - description: test
+    path: DeleteUser/DeleteUserv2_test.go
+    services:
+      - service: iam
+        actions:
+          - test
+  - description: This example detaches an Amazon DynamoDB full-access policy from an IAM role.
+    path: DetachUserPolicy/DetachUserPolicyv2.go
     services:
       - service: iam      
         actions:
           - DetachRolePolicy
-  - path: DetachUserPolicy/DetachUserPolicyv2_test.go
+  - description: test
+    path: DetachUserPolicy/DetachUserPolicyv2_test.go
     services:
       - service: iam      
         actions:
           - test
-  - path: GetServerCert/GetServerCertv2.go
-    services:
-      - service: iam      
-        actions:
-          - GetServerCertificate
-  - path: GetServerCert/GetServerCertv2_test.go
-    services:
-      - service: iam      
-        actions:
-          - test
-  - path: GetPolicy/GetPolicyv2.go
+  - description: This example retrieves the description of the IAM policy with the specified ARN.
+    path: GetPolicy/GetPolicyv2.go
     services:
       - service: iam      
         actions:
           - GetPolicy
-  - path: GetPolicy/GetPolicyv2_test.go
+  - description: test
+    path: GetPolicy/GetPolicyv2_test.go
     services:
       - service: iam      
         actions:
           - test
-  - path: ListAdmins/ListAdminsv2.go
+  - description: This example retrieves an IAM server certificate.
+    path: GetServerCert/GetServerCertv2.go
+    services:
+      - service: iam      
+        actions:
+          - GetServerCertificate
+  - description: test
+    path: GetServerCert/GetServerCertv2_test.go
+    services:
+      - service: iam      
+        actions:
+          - test
+  - description: This example retrieves the access keys for your IAM account.
+    path: ListAccessKeys/ListAccessKeysv2.go
+    services:
+      - service: iam
+        actions:
+          - ListAccessKeys
+  - description: test
+    path: ListAccessKeys/ListAccessKeysv2_test.go
+    services:
+      - service: iam
+        actions:
+          - test
+  - description: This example retrieves the aliases for your IAM account.
+    path: ListAccountAliases/ListAccountAliasesv2.go
+    services:
+      - service: iam
+        actions:
+          - ListAccountAliases
+  - description: test
+    path: ListAccountAliases/ListAccountAliasesv2_test.go
+    services:
+      - service: iam
+        actions:
+          - test
+  - description: This example lists the number IAM users and those who have administrative privileges.
+    path: ListAdmins/ListAdminsv2.go
     services:
       - service: iam      
         actions:
@@ -137,77 +188,68 @@ files:
           - ListAttachedGroupPolicies
           - ListGroupPolicies
           - ListGroupsForUser
-  - path: ListAdmins/ListAdminsv2_test.go
+  - description: test
+    path: ListAdmins/ListAdminsv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: ListAccessKeys/ListAccessKeysv2.go
-    services:
-      - service: iam
-        actions:
-          - ListAccessKeys
-  - path: ListAccessKeys/ListAccessKeysv2_test.go
-    services:
-      - service: iam
-        actions:
-          - test
-  - path: ListAccountAliases/ListAccountAliasesv2.go
-    services:
-      - service: iam
-        actions:
-          - ListAccountAliases
-  - path: ListAccountAliases/ListAccountAliasesv2_test.go
-    services:
-      - service: iam
-        actions:
-          - test
-  - path: ListServerCerts/ListServerCertsv2.go
+  - description: This example retrieves the server certificates.
+    path: ListServerCerts/ListServerCertsv2.go
     services:
       - service: iam      
         actions:
           - ListServerCertificates
-  - path: ListServerCerts/ListServerCertsv2_test.go
+  - description: test
+    path: ListServerCerts/ListServerCertsv2_test.go
     services:
       - service: iam      
         actions:
           - test
-  - path: ListUsers/ListUsersv2.go
+  - description: This example retrieves a list of your IAM users.
+    path: ListUsers/ListUsersv2.go
     services:
       - service: iam      
         actions:
           - ListUsers
-  - path: ListUsers/ListUsersv2_test.go
+  - description: test
+    path: ListUsers/ListUsersv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: UpdateAccessKey/UpdateAccessKeyv2.go
+  - description: This example sets the status of an IAM access key to active.
+    path: UpdateAccessKey/UpdateAccessKeyv2.go
     services:
       - service: iam
         actions:
           - UpdateAccessKey
-  - path: UpdateAccessKey/UpdateAccessKeyv2_test.go
+  - description: test
+    path: UpdateAccessKey/UpdateAccessKeyv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: UpdateServerCert/UpdateServerCertv2.go
+  - description: This example renames an IAM server certificate.
+    path: UpdateServerCert/UpdateServerCertv2.go
     services:
       - service: iam
         actions:
           - UpdateServerCertificate
-  - path: UpdateServerCert/UpdateServerCertv2_test.go
+  - description: test
+    path: UpdateServerCert/UpdateServerCertv2_test.go
     services:
       - service: iam
         actions:
           - test
-  - path: UpdateUser/UpdateUserv2.go
+  - description: This example changes the name of the user.
+    path: UpdateUser/UpdateUserv2.go
     services:
       - service: iam
         actions:
           - UpdateUser
-  - path: UpdateUser/UpdateUserv2_test.go
+  - description: test
+    path: UpdateUser/UpdateUserv2_test.go
     services:
       - service: iam
         actions:

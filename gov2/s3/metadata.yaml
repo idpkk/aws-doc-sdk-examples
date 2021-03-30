@@ -1,5 +1,5 @@
 files:
-  - description: This example copies an Amazon S3 object from one bucket to another.
+  - description: This code example copies an Amazon S3 object from one bucket to another using version 2 of the AWS SDK for Go.
     path: CopyObject/CopyObjectv2.go
     services:
       - service: s3
@@ -11,7 +11,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example creates an Amazon S3 bucket.
+  - description: This code example creates an Amazon S3 bucket using version 2 of the AWS SDK for Go.
     path: CreateBucket/CreateBucketv2.go
     services:
       - service: s3
@@ -23,7 +23,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example deletes an Amazon S3 bucket.
+  - description: This code example deletes an Amazon S3 bucket using version 2 of the AWS SDK for Go.
     path: DeleteBucket/DeleteBucketv2.go
     services:
       - service: s3
@@ -35,7 +35,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example deletes an Amazon S3 bucket object.
+  - description: This code example deletes an Amazon S3 bucket object using version 2 of the AWS SDK for Go.
     path: DeleteObject/DeleteObjectv2.go
     services:
       - service: s3
@@ -47,7 +47,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example retrieves a presigned URL for an Amazon S3 bucket object.
+  - description: This code example retrieves a presigned URL for an Amazon S3 bucket object using version 2 of the AWS SDK for Go.
     path: GeneratePresignedURL/GeneratePresignedURLv2.go
     services:
       - service: s3
@@ -59,7 +59,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example retrieves the access control list (ACL) for an Amazon S3 bucket.
+  - description: This code example retrieves the access control list (ACL) for an Amazon S3 bucket using version 2 of the AWS SDK for Go.
     path: GetBucketAcl/GetBucketAclv2.go
     services:
       - service: s3
@@ -71,7 +71,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example retrieves the access control list (ACL) for an Amazon S3 bucket object.
+  - description: This code example retrieves the access control list (ACL) for an Amazon S3 bucket object using version 2 of the AWS SDK for Go.
     path: GetObjectAcl/GetObjectAclv2.go
     services:
       - service: s3
@@ -83,7 +83,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example lists your Amazon S3 buckets.
+  - description: This code example lists your Amazon S3 buckets using version 2 of the AWS SDK for Go.
     path: ListBuckets/ListBucketsv2.go
     services:
       - service: s3
@@ -95,7 +95,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example lists the objects in an Amazon S3 bucket.
+  - description: This code example lists the objects in an Amazon S3 bucket using version 2 of the AWS SDK for Go.
     path: ListObjects/ListObjectsv2.go
     services:
       - service: s3
@@ -107,7 +107,7 @@ files:
       - service: s3
         actions:
           - test
-  - description: This example creates an Amazon S3 bucket object from a local file.
+  - description: This code example creates an Amazon S3 bucket object from a local file using version 2 of the AWS SDK for Go.
     path: PutObject/PutObjectv2.go
     services:
       - service: s3

@@ -1,5 +1,5 @@
 files:
-  - description: This example creates an Amazon SNS topic.
+  - description: This code example creates an Amazon SNS topic using version 2 of the AWS SDK for Go.
     path: CreateTopic/CreateTopicv2.go
     services:
       - service: sns
@@ -11,7 +11,7 @@ files:
       - service: sns
         actions:
           - test
-  - description: This example lists the topic and subscription Amazon Resource Names (ARNs) for your Amazon SNS subscriptions.
+  - description: This code example lists the topic and subscription Amazon Resource Names (ARNs) for your Amazon SNS subscriptions using version 2 of the AWS SDK for Go.
     path: ListSubscriptions/ListSubscriptionsv2.go
     services:
       - service: sns
@@ -23,7 +23,7 @@ files:
       - service: sns
         actions:
           - test
-  - description: This example lists the ARNs for your Amazon SNS topics.
+  - description: This code example lists the ARNs for your Amazon SNS topics using version 2 of the AWS SDK for Go.
     path: ListTopics/ListTopicsv2.go
     services:
       - service: sns
@@ -35,7 +35,7 @@ files:
       - service: sns
         actions:
           - test
-  - description: This example publishes a message to an Amazon SNS topic.
+  - description: This code example publishes a message to an Amazon SNS topic using version 2 of the AWS SDK for Go.
     path: Publish/Publishv2.go
     services:
       - service: sns
@@ -47,7 +47,7 @@ files:
       - service: sns
         actions:
           - test
-  - description: This example subscribes a user, by email address, to an Amazon SNS topic.
+  - description: This code example subscribes a user, by email address, to an Amazon SNS topic using version 2 of the AWS SDK for Go.
     path: Subscribe/Subscribev2.go
     services:
       - service: sns

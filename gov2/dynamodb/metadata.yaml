@@ -1,5 +1,5 @@
 files:
-  - description: This example lists the following properties of a DynamoDB table.
+  - description: This code example lists the following properties of a DynamoDB table using version 2 of the AWS SDK for Go.
     path: DescribeTable/DescribeTablev2.go
     services:
       - service: dynamodb
@@ -11,7 +11,7 @@ files:
       - service: dynamodb
         actions:
           - test
-  - description: This example retrieves the Amazon DynamoDB items with a rating above a specified value in a specified year.
+  - description: This code example retrieves the Amazon DynamoDB items with a rating above a specified value in a specified year using version 2 of the AWS SDK for Go.
     path: ScanItems/ScanItemsv2.go
     services:
       - service: dynamodb

@@ -1,5 +1,5 @@
 files:
-  - description: This example creates an Amazon EC2 image.
+  - description: This code example creates an Amazon EC2 image using version 2 of the AWS SDK for Go.
     path: CreateImage/CreateImagev2.go
     services:
       - service: ec2
@@ -11,7 +11,7 @@ files:
       - service: ec2
         actions:
           - test
-  - description: This example creates a T2-Micro instance from the Amazon EC2 image ami-e7527ed7 and attaches a tag to the instance.
+  - description: This code example creates a T2-Micro instance from the Amazon EC2 image ami-e7527ed7 and attaches a tag to the instance using version 2 of the AWS SDK for Go.
     path: CreateInstance/CreateInstancev2.go
     services:
       - service: ec2
@@ -24,7 +24,7 @@ files:
       - service: ec2
         actions:
           - test
-  - description: This example retrieves information about your Amazon EC2 instances.
+  - description: This code example retrieves information about your Amazon EC2 instances using version 2 of the AWS SDK for Go.
     path: DescribeInstances/DescribeInstancesv2.go
     services:
       - service: ec2
@@ -36,7 +36,7 @@ files:
       - service: ec2
         actions:
           - test
-  - description: This example retrieves information about your VPC endpoint connections.
+  - description: This code example retrieves information about your VPC endpoint connections using version 2 of the AWS SDK for Go.
     path: DescribeVpcEndpoints/DescribeVpcEndpointsv2.go
     services:
       - service: ec2
@@ -48,7 +48,7 @@ files:
       - service: ec2
         actions:
           - test
-  - description: This example enables or disables monitoring for an Amazon EC2 instance.
+  - description: This code example enables or disables monitoring for an Amazon EC2 instance using version 2 of the AWS SDK for Go.
     path: MonitorInstances/MonitorInstancesv2.go
     services:
       - service: ec2
@@ -61,7 +61,7 @@ files:
       - service: ec2
         actions:
           - test
-  - description: This example reboots an Amazon EC2 instance.
+  - description: This code example reboots an Amazon EC2 instance using version 2 of the AWS SDK for Go.
     path: RebootInstances/RebootInstancesv2.go
     services:
       - service: ec2
@@ -73,7 +73,7 @@ files:
       - service: ec2
         actions:
           - test
-  - description: This example starts an Amazon EC2 instance.
+  - description: This code example starts an Amazon EC2 instance using version 2 of the AWS SDK for Go.
     path: StartInstances/StartInstancesv2.go
     services:
       - service: ec2
@@ -85,7 +85,7 @@ files:
       - service: ec2
         actions:
           - test
-  - description: This example stops an Amazon EC2 instance.
+  - description: This code example stops an Amazon EC2 instance using version 2 of the AWS SDK for Go.
     path: StopInstances/StopInstancesv2.go
     services:
       - service: ec2

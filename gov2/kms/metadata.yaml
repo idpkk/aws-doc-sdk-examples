@@ -1,5 +1,5 @@
 files:
-  - description: This example creates an AWS KMS customer master key (CMK).
+  - description: This code example creates an AWS KMS customer master key (CMK) using version 2 of the AWS SDK for Go.
     path: CreateKey/CreateKeyv2.go
     services:
       - service: kms
@@ -11,7 +11,7 @@ files:
       - service: kms
         actions:
           - test
-  - description: This example decrypts some text that was encrypted with an AWS KMS customer master key (CMK).
+  - description: This code example decrypts some text that was encrypted with an AWS KMS customer master key (CMK) using version 2 of the AWS SDK for Go.
     path: DecryptData/DecryptDatav2.go
     services:
       - service: kms
@@ -23,7 +23,7 @@ files:
       - service: kms
         actions:
           - test
-  - description: This example encrypts some text using an AWS KMS customer master key (CMK).
+  - description: This code example encrypts some text using an AWS KMS customer master key (CMK) using version 2 of the AWS SDK for Go.
     path: EncryptData/EncryptDatav2.go
     services:
       - service: kms
@@ -35,7 +35,7 @@ files:
       - service: kms
         actions:
           - test
-  - description: This example reencrypts some text using an AWS KMS customer master key (CMK).
+  - description: This code example reencrypts some text using an AWS KMS customer master key (CMK) using version 2 of the AWS SDK for Go.
     path: ReEncryptData/ReEncryptDatav2.go
     services:
       - service: kms

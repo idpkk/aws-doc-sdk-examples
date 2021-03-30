@@ -1,5 +1,5 @@
 files:
-  - description: This example gets temporary security credentials to access resources.
+  - description: This code example gets temporary security credentials to access resources using version 2 of the AWS SDK for Go.
     path: AssumeRole/AssumeRolev2.go
     services:
       - service: sts

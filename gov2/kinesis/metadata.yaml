@@ -1,5 +1,5 @@
 files:
-  - description: This example produces a new data record in the stream.
+  - description: This code example produces a new data record in the stream using version 2 of the AWS SDK for Go.
     path: PutRecord/PutRecordv2.go
     services:
       - service: kinesis

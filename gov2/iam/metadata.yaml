@@ -1,5 +1,5 @@
 files:
-  - description: This example retrieves when an IAM access key was last used, including the AWS Region and with which service.
+  - description: This code example retrieves when an IAM access key was last used, including the AWS Region and with which service using version 2 of the AWS SDK for Go.
     path: AccessKeyLastUsed/AccessKeyLastUsedv2.go
     services:
       - service: iam
@@ -11,7 +11,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example attaches an Amazon DynamoDB full-access policy to an IAM role.
+  - description: This code example attaches an Amazon DynamoDB full-access policy to an IAM role using version 2 of the AWS SDK for Go.
     path: AttachUserPolicy/AttachUserPolicyv2.go
     services:
       - service: iam
@@ -23,7 +23,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example creates a new IAM access key for a user.
+  - description: This code example creates a new IAM access key for a user using version 2 of the AWS SDK for Go.
     path: CreateAccessKey/CreateAccessKeyv2.go
     services:
       - service: iam
@@ -35,7 +35,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example creates an alias for your IAM account.
+  - description: This code example creates an alias for your IAM account using version 2 of the AWS SDK for Go.
     path: CreateAccountAlias/CreateAccountAliasv2.go
     services:
       - service: iam
@@ -47,7 +47,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example creates an IAM policy.
+  - description: This code example creates an IAM policy using version 2 of the AWS SDK for Go.
     path: CreatePolicy/CreatePolicyv2.go
     services:
       - service: iam
@@ -59,7 +59,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example creates an IAM user.
+  - description: This code example creates an IAM user using version 2 of the AWS SDK for Go.
     path: CreateUser/CreateUserv2.go
     services:
       - service: iam
@@ -71,7 +71,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example deletes an IAM access key.
+  - description: This code example deletes an IAM access key using version 2 of the AWS SDK for Go.
     path: DeleteAccessKey/DeleteAccessKeyv2.go
     services:
       - service: iam
@@ -83,7 +83,7 @@ files:
       - service: iam      
         actions:
           - test
-  - description: This example deletes an alias for your IAM account.
+  - description: This code example deletes an alias for your IAM account using version 2 of the AWS SDK for Go.
     path: DeleteAccountAlias/DeleteAccountAliasv2.go
     services:
       - service: iam      
@@ -95,7 +95,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example deletes an IAM server certificate.
+  - description: This code example deletes an IAM server certificate using version 2 of the AWS SDK for Go.
     path: DeleteServerCert/DeleteServerCertv2.go
     services:
       - service: iam      
@@ -107,7 +107,7 @@ files:
       - service: iam      
         actions:
           - test
-  - description: This example deletes an IAM user.
+  - description: This code example deletes an IAM user using version 2 of the AWS SDK for Go.
     path: DeleteUser/DeleteUserv2.go
     services:
       - service: iam      
@@ -119,7 +119,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example detaches an Amazon DynamoDB full-access policy from an IAM role.
+  - description: This code example detaches an Amazon DynamoDB full-access policy from an IAM role using version 2 of the AWS SDK for Go.
     path: DetachUserPolicy/DetachUserPolicyv2.go
     services:
       - service: iam      
@@ -131,7 +131,7 @@ files:
       - service: iam      
         actions:
           - test
-  - description: This example retrieves the description of the IAM policy with the specified ARN.
+  - description: This code example retrieves the description of the IAM policy with the specified ARN using version 2 of the AWS SDK for Go.
     path: GetPolicy/GetPolicyv2.go
     services:
       - service: iam      
@@ -143,7 +143,7 @@ files:
       - service: iam      
         actions:
           - test
-  - description: This example retrieves an IAM server certificate.
+  - description: This code example retrieves an IAM server certificate using version 2 of the AWS SDK for Go.
     path: GetServerCert/GetServerCertv2.go
     services:
       - service: iam      
@@ -155,7 +155,7 @@ files:
       - service: iam      
         actions:
           - test
-  - description: This example retrieves the access keys for your IAM account.
+  - description: This code example retrieves the access keys for your IAM account using version 2 of the AWS SDK for Go.
     path: ListAccessKeys/ListAccessKeysv2.go
     services:
       - service: iam
@@ -167,7 +167,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example retrieves the aliases for your IAM account.
+  - description: This code example retrieves the aliases for your IAM account using version 2 of the AWS SDK for Go.
     path: ListAccountAliases/ListAccountAliasesv2.go
     services:
       - service: iam
@@ -179,7 +179,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example lists the number IAM users and those who have administrative privileges.
+  - description: This code example lists the number IAM users and those who have administrative privileges using version 2 of the AWS SDK for Go.
     path: ListAdmins/ListAdminsv2.go
     services:
       - service: iam      
@@ -194,7 +194,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example retrieves the server certificates.
+  - description: This code example retrieves the server certificates using version 2 of the AWS SDK for Go.
     path: ListServerCerts/ListServerCertsv2.go
     services:
       - service: iam      
@@ -206,7 +206,7 @@ files:
       - service: iam      
         actions:
           - test
-  - description: This example retrieves a list of your IAM users.
+  - description: This code example retrieves a list of your IAM users using version 2 of the AWS SDK for Go.
     path: ListUsers/ListUsersv2.go
     services:
       - service: iam      
@@ -218,7 +218,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example sets the status of an IAM access key to active.
+  - description: This code example sets the status of an IAM access key to active using version 2 of the AWS SDK for Go.
     path: UpdateAccessKey/UpdateAccessKeyv2.go
     services:
       - service: iam
@@ -230,7 +230,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example renames an IAM server certificate.
+  - description: This code example renames an IAM server certificate using version 2 of the AWS SDK for Go.
     path: UpdateServerCert/UpdateServerCertv2.go
     services:
       - service: iam
@@ -242,7 +242,7 @@ files:
       - service: iam
         actions:
           - test
-  - description: This example changes the name of the user.
+  - description: This code example changes the name of the user using version 2 of the AWS SDK for Go.
     path: UpdateUser/UpdateUserv2.go
     services:
       - service: iam

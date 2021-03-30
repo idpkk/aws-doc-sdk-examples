@@ -1,5 +1,5 @@
 files:
-  - description: This example deletes a Systems Manager string parameter.
+  - description: This code example deletes a Systems Manager string parameter using version 2 of the AWS SDK for Go.
     path: DeleteParameter/DeleteParameterv2.go
     services:
       - service: ssm
@@ -11,7 +11,7 @@ files:
       - service: ssm
         actions:
           - test
-  - description: This example retrieves a Systems Manager string parameter.
+  - description: This code example retrieves a Systems Manager string parameter using version 2 of the AWS SDK for Go.
     path: GetParameter/GetParameterv2.go
     services:
       - service: ssm
@@ -23,7 +23,7 @@ files:
       - service: ssm
         actions:
           - test
-  - description: This example creates a Systems Manager string parameter.
+  - description: This code example creates a Systems Manager string parameter using version 2 of the AWS SDK for Go.
     path: PutParameter/PutParameterv2.go
     services:
       - service: ssm

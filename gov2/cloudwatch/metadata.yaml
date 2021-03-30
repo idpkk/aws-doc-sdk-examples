@@ -1,5 +1,5 @@
 files:
-  - description: This example creates a new Amazon CloudWatch metric in a namespace.
+  - description: This code example creates a new Amazon CloudWatch metric in a namespace using version 2 of the AWS SDK for Go.
     path: CreateCustomMetric/CreateCustomMetricv2.go
     services:
       - service: cloudwatch
@@ -11,7 +11,7 @@ files:
       - service: cloudwatch
         actions:
           - test
-  - description: This example enables the specified Amazon CloudWatch alarm.
+  - description: This code example enables the specified Amazon CloudWatch alarm using version 2 of the AWS SDK for Go.
     path: CreateEnableMetricAlarm/CreateEnableMetricAlarmv2.go
     services:
       - service: cloudwatch
@@ -23,7 +23,7 @@ files:
       - service: cloudwatch
         actions:
           - test
-  - description: This example displays a list of your Amazon CloudWatch alarms.
+  - description: This code example displays a list of your Amazon CloudWatch alarms using version 2 of the AWS SDK for Go.
     path: DescribeAlarms/DescribeAlarmsv2.go
     services:
       - service: cloudwatch
@@ -35,7 +35,7 @@ files:
       - service: cloudwatch
         actions:
           - test
-  - description: This example disables an Amazon CloudWatch alarm.
+  - description: This code example disables an Amazon CloudWatch alarm using version 2 of the AWS SDK for Go.
     path: DisableAlarm/DisableAlarmv2.go
     services:
       - service: cloudwatch
@@ -47,7 +47,7 @@ files:
       - service: cloudwatch
         actions:
           - test
-  - description: This example displays the name, namespace, and dimension name of your Amazon CloudWatch metrics.
+  - description: This code example displays the name, namespace, and dimension name of your Amazon CloudWatch metrics using version 2 of the AWS SDK for Go.
     path: ListMetrics/ListMetricsv2.go
     services:
       - service: cloudwatch
@@ -59,7 +59,7 @@ files:
       - service: cloudwatch
         actions:
           - test
-  - description: This example sends an Amazon CloudWatch event to Amazon EventBridge.
+  - description: This code example sends an Amazon CloudWatch event to Amazon EventBridge using version 2 of the AWS SDK for Go.
     path: PutEvent/PutEventv2.go
     services:
       - service: cloudwatch

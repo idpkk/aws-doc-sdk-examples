@@ -1,6 +1,17 @@
 files:
-  - description: This code example detects instances of real-world entities, such as flowers, weddings, and nature using version 2 of the AWS SDK for Go.
-    path: DetectLabels/DetectLabels.go
+  - description: This code example detects faces in an image file in an S3 bucket and displays some information about each face.
+  - path: DetectFaces/DetectFaces.go
+    services:
+      - service: rekognition
+        actions:
+	  - DetectFaces
+  - path: DetectFaces/DetectFaces_test.go
+    services:
+      - service: rekognition
+        actions:
+	  - test
+  - description: This code example detects instances of real-world entities, such as flowers, weddings, and nature.
+  - path: DetectLabels/DetectLabels.go
     services:
       - service: rekognition
         actions:

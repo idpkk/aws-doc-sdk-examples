@@ -1,0 +1,13 @@
+files:
+  - description: This code example converts text to speech and saves the converted text in an MP3 file.
+    path: SynthesizeSpeechExample/SynthesizeSpeech/SynthesizeSpeech.cs
+    services:
+      - service: polly
+        actions:
+          - API
+  - description: test
+    path: SynthesizeSpeechExample/SynthesizeSpeechTest/SynthesizeSpeechTest.cs
+    services:
+      - service: polly
+        actions:
+          - test

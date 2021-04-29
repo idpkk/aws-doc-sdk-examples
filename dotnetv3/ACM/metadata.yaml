@@ -1,0 +1,26 @@
+files:
+  - description: This code example displays your certificates in the region specified in the code.
+    path: DescribeCertificates/DescribeCertificate/DescribeCertificate.cs
+    services:
+      - service: acm
+        actions:
+          - DescribeCertificate
+  - description: test
+    path: DescribeCertificates/DescribeCertificateTest/DescribeCertificateTest.cs
+    services:
+      - service: acm
+        actions:
+          - test
+  - description: This code example displays your certificates in the region specified in the code.
+    path: ListCertificates/ListCertificates/ListCertificates.cs
+    services:
+      - service: acm
+        actions:
+          - 
+  - description: test
+    path: ListCertificates/ListCertificatesTest/ListCertificatesTest.cs
+    services:
+      - service: acm
+        actions:
+          - test
+  

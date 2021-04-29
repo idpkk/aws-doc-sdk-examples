@@ -1,0 +1,13 @@
+files:
+  - description: This code example scans an image for faces and celebrity faces.
+    path: FaceRekognitionExample/FaceRekognitionExample/FaceRekognition.cs
+    services:
+      - service: rekognition
+        actions:
+          - DetectFaces
+  - description: test
+    path: 
+    services:
+      - service: rekognition
+        actions:
+          - test

@@ -1,0 +1,73 @@
+files:
+  - description: This code example copies an object from one Amazon S3 bucket to another. 
+    path: CopyObjectExample/CopyObject/CopyObject.cs
+    services:
+      - service: s3
+        actions:
+          - CopyObject
+  - description: test
+    path: CopyObjectExample/CopyObjectTest/CopyObjectTest.cs
+    services:
+      - service: s3
+        actions:
+          - test
+  - description: This code example creates an Amazon S3 bucket. 
+    path: CreateBucketExample/CreateBucket/CreateBucket.cs
+    services:
+      - service: s3
+        actions:
+          - CreateBucket
+  - description: test
+    path: CreateBucketExample/CreateBucketTest/CreateBucketTest.cs
+    services:
+      - service: s3
+        actions:
+          - test
+  - description: This code example deletes an Amazon S3 bucket. 
+    path: DeleteBucketExample/DeleteBucket/DeleteBucket.cs
+    services:
+      - service: s3
+        actions:
+          - DeleteBucket
+  - description: test
+    path: DeleteBucketExample/DeleteBucketTest/DeleteBucketTest.cs
+    services:
+      - service: s3
+        actions:
+          - test
+  - description: This code example lists your Amazon S3 buckets. 
+    path: ListBucketsExample/ListBuckets/Program.cs
+    services:
+      - service: s3
+        actions:
+          - ListBuckets
+  - description: test
+    path: ListBucketsExample/ListBucketsTest/ListBucketTest.cs
+    services:
+      - service: s3
+        actions:
+          - test
+  - description: This code example lists the objects in an Amazon S3 bucket. 
+    path: ListObjectsExample/ListObjects/ListObjects.cs
+    services:
+      - service: s3
+        actions:
+          - ListObjects
+  - description: test
+    path: ListObjectsExample/ListObjectsTest/ListObjectsTest.cs
+    services:
+      - service: s3
+        actions:
+          - test
+  - description: This code example uploads a file to an Amazon S3 bucket. 
+    path: UploadObjectExample/UploadObject/UploadObject.cs
+    services:
+      - service: s3
+        actions:
+          - PutObject
+  - description: test
+    path: UploadObjectExample/UploadObjectTest/UploadObjectTest.cs
+    services:
+      - service: s3
+        actions:
+          - test                                                  

@@ -71,7 +71,6 @@ files:
       - service: cloudwatch
         actions:
           - test
-      - cloudwatch
   - description: This example displays the metric data points for the provided input in the given time-frame.
   - path : GetMetricData/GetMetricDatav2.go
     services:

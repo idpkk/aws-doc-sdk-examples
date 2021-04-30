@@ -16,7 +16,7 @@ Gemfile.lock
 php/example_code/Find_replace_confirm changes.py
 *.phar
 ._*
-cpp/.vs/
+.vs/
 *.iml
 .vscode
 __pycache__
@@ -29,3 +29,4 @@ cdk.out/
 package-lock.json
 *.class
 *.exe
+obj/

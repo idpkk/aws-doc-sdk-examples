@@ -77,10 +77,10 @@ files:
     services:
       - service: cloudwatch
         actions:
-	  - GetMetricData
+          - GetMetricData
   - path: GetMetricData/GetMetricDatav2_test.go
     services:
       - service: cloudwatch
         actions:
-	  - test
+          - test
 

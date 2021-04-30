@@ -1,17 +1,13 @@
-# AWS SDK for .NET Amazon SQS code examples
+# AWS SDK for .NET Amazon SNS code examples
 
 ## Purpose
 
 These examples demonstrates how to perform several 
-Amazon SQS operations using the AWS SDK for .NET.
+Amazon SNS operations using the AWS SDK for .NET.
 
-## CreateSendExample/CreateSendExample/CreateSendExample.cs
+## SNSMessageExample/SNSMessageExample/SNSMessageExample.cs
 
-This code example creates a queue and then sends a message to the queue.
-
-## ReceiveDeleteExample/ReceiveDeleteExample/ReceiveDeleteExample.cs
-
-This code example retrieves a message from a queue and then deletes the message.
+This code example sends an SMS message.
 
 ## Copyright and License
 

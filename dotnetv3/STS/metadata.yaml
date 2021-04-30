@@ -1,0 +1,14 @@
+files:
+  - description: This code example shows how to use AWS STS to assume an IAM role.
+    path: AssumeRole/AssumeRoleExample/AssumeRole.cs
+    services:
+      - service: sts
+        actions:
+          - AssumeRole
+          - GetCallerIdentity
+  - description: test
+    path: AssumeRole/AssumeRoleExampleTest/AssumeRoleTests.cs
+    services:
+      - service: sts
+        actions:
+          - test

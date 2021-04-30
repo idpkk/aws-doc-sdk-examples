@@ -1,12 +1,13 @@
-# Disregard this file. AWS uses it internally to 
-# track code coverage and unit test coverage 
-# within this repository.
----
 files:
-  - path: SNSMessageExample/SNSMessageExample.cs
-    services: 
-    - sns
-  - path: SNSMessageExampleTest/SNSMessageExampleTest.cs
-    services: 
-    - sns
-...
+  - description: This code example sends an SMS message.
+    path: SNSMessageExample/SNSMessageExample/SNSMessageExample.cs
+    services:
+      - service: sns
+        actions:
+          - Publish
+  - description: test
+    path: SNSMessageExample/SNSMessageExampleTest/SNSMessageTest.cs
+    services:
+      - service: sns
+        actions:
+          - test

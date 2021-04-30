@@ -1,0 +1,28 @@
+files:
+  - description: This code example 
+    path: CreateSendExample/CreateSendExample/CreateSendExample.cs
+    services:
+      - service: sqs
+        actions:
+          - CreateQueue
+          - SendMessage
+  - description: test
+    path: CreateSendExample/CreateSendExampleTests/CreateSendExampleTests.cs
+    services:
+      - service: sqs
+        actions:
+          - test
+  - description: This code example retrieves a message from a queue and then deletes the message.
+    path: ReceiveDeleteExample/ReceiveDeleteExample/ReceiveDeleteExample.cs
+    services:
+      - service: sqs
+        actions:
+          - DeleteMessage
+          - GetQueueUrl
+          - ReceiveMessage
+  - description: test
+    path: ReceiveDeleteExample/ReceiveDeleteExampleTests/ReceiveDeleteExampleTests.cs
+    services:
+      - service: sqs
+        actions:
+          - test

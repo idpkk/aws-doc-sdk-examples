@@ -16,7 +16,7 @@ files:
     services:
       - service: acm
         actions:
-          - 
+          - ListCertificates
   - description: test
   - path: ListCertificates/ListCertificatesTest/ListCertificatesTest.cs
     services:

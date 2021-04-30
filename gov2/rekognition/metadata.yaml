@@ -4,12 +4,12 @@ files:
     services:
       - service: rekognition
         actions:
-	  - DetectFaces
+          - DetectFaces
   - path: DetectFaces/DetectFaces_test.go
     services:
       - service: rekognition
         actions:
-	  - test
+          - test
   - description: This code example detects instances of real-world entities, such as flowers, weddings, and nature.
   - path: DetectLabels/DetectLabels.go
     services:

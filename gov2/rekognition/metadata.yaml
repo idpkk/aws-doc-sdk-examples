@@ -10,14 +10,21 @@ files:
       - service: rekognition
         actions:
           - test
-  - description: This code example detects instances of real-world entities, such as flowers, weddings, and nature.
+  - description: This code example detects instances of real-world entities, such as flowers, weddings, and nature, and saves that information in a database.
   - path: DetectLabels/DetectLabels.go
     services:
+      - service: dynamodb
+        actions:
+          - PutItem
+          - UpdateItem
       - service: rekognition
         actions:
           - DetectLabels
+      - service: s3
+        actions:
+          - PutObject
   - description: test
-    path: DetectLabels/DetectLabels_test.go
+  - path: DetectLabels/DetectLabels_test.go
     services:
       - service: rekognition
         actions:
